@@ -16,52 +16,48 @@
 </head>
 <body class="bg-white text-neutral-900">
 
-  <!-- HERO -->
-  <section class="relative w-full bg-[#7a8746] text-white overflow-hidden">
-    <div class="mx-auto max-w-6xl grid md:grid-cols-2 min-h-[320px] lg:min-h-[420px]">
+<!-- HERO -->
+<section class="relative w-full bg-[#7a8746] text-white overflow-hidden">
+  <div class="mx-auto max-w-6xl grid md:grid-cols-2 min-h-[380px] lg:min-h-[460px]">
 
-      <!-- LEFT: Angled image -->
-      <div class="relative hidden md:block">
-        <!-- Wrapper that we rotate to get a diamond/angled look -->
-        <div class="absolute inset-y-[-20%] left-[-20%] w-[160%]">
-          <div class="h-full w-full origin-center rotate-[-35deg] overflow-hidden">
-            <img
-              src="./kid-hero.jpg"
-              alt="Happy child"
-              class="h-full w-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- For mobile: simple full-width image above the logo -->
-      <div class="md:hidden">
+    <!-- LEFT: Diamond image -->
+    <div class="hidden md:flex items-center justify-center">
+      <div class="w-[520px] h-[520px] -ml-24 rotate-[-35deg] overflow-hidden">
         <img
-          src="./kid-hero.jpg"
-          alt="Happy child"
-          class="w-full h-72 object-cover"
+          src="./kid-hero.jpg"   <!-- your image -->
+          alt="Happy couple"
+          class="w-full h-full object-cover"
         />
-      </div>
-
-      <!-- RIGHT: Logo + tagline -->
-      <div class="flex items-center justify-center px-8 py-10 text-center">
-        <div>
-          <!-- Replace this with your real SVG/logo when you have it -->
-          <div class="text-4xl md:text-5xl font-extrabold tracking-tight leading-none">
-            Oroko
-            <span class="block text-2xl mt-3 tracking-[0.25em]">RISE</span>
-          </div>
-
-          <p class="mt-6 text-lg md:text-xl font-medium text-[#0d2a26]">
-            be first.
-          </p>
-        </div>
       </div>
     </div>
 
-    <!-- Bottom accent bar -->
-    <div class="h-3 w-full bg-[#44a2d3]"></div>
-  </section>
+    <!-- Mobile: simple full-width image -->
+    <div class="md:hidden">
+      <img
+        src="./kid-hero.jpg"
+        alt="Happy couple"
+        class="w-full h-72 object-cover"
+      />
+    </div>
+
+    <!-- RIGHT: Logo + tagline -->
+    <div class="flex items-center justify-center px-8 py-10 text-center">
+      <div>
+        <div class="text-4xl md:text-5xl font-extrabold tracking-tight leading-none">
+          Oroko
+          <span class="block text-2xl mt-3 tracking-[0.25em]">RISE</span>
+        </div>
+
+        <p class="mt-6 text-lg md:text-xl font-medium text-[#0d2a26]">
+          be first.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom accent bar -->
+  <div class="h-3 w-full bg-[#44a2d3]"></div>
+</section>
 
   <!-- Simple content so the page scrolls -->
   <main class="mx-auto max-w-3xl px-4 py-12 text-neutral-700">
